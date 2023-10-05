@@ -12,6 +12,8 @@ import Overview from "./ListingTabs/Overview";
 import Propertydetails from "./ListingTabs/Propertydetails";
 import Buildingdetails from "./ListingTabs/Buildingdetails";
 
+import Locationdetails from "./ListingTabs/Locationdetails";
+
 const onChange = (key) => {
     console.log(key);
 };
@@ -45,7 +47,7 @@ const items = [
     {
         key: "6",
         label: "Location Details",
-        // children: <Nominee />,
+        children: <Locationdetails />,
     },
     {
         key: "7",
