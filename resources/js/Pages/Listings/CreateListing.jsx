@@ -4,7 +4,7 @@ import { Card, Typography, Tabs, Form, Button } from "antd";
 
 const onCancelData = () => {
     window.alert("Are You Sure Want to Cancel?");
-    router.get(route("agents.index"));
+    router.get(route("listings.index"));
 };
 
 //tabs

@@ -25,7 +25,7 @@ const { Header, Sider, Content } = Layout;
 const items = [
     {
         key: "profile",
-        label: <Link href={window.route("profile.edit")}>My profile</Link>,
+        label: <Link href={window.route("profile.edit")}>My Profile</Link>,
         icon: <UserOutlined />,
     },
     {
@@ -77,6 +77,15 @@ export default function Authenticated({ header, children }) {
                             label: (
                                 <Link href={window.route("dashboard")}>
                                     Dashboard
+                                </Link>
+                            ),
+                        },
+                        {
+                            key: "listings",
+                            icon: <UserOutlined />,
+                            label: (
+                                <Link href={window.route("listings.index")}>
+                                    Listings
                                 </Link>
                             ),
                         },

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\TestmodelController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -37,6 +38,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/listings', [ListingController::class, 'index']) -> name('listings.index');
     Route::get('/listings-create', [ListingController::class, 'create']) -> name('listings.create');
+
+    Route::get('/test', [TestmodelController::class, 'index']) -> name('test.index');
+    Route::get('/test-create', [TestmodelController::class, 'create']) -> name('test.create');
+
 });
 
 require __DIR__.'/auth.php';
