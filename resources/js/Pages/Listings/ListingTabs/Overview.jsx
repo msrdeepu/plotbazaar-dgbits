@@ -152,7 +152,7 @@ const Overview = () => {
                     <Input name="reraid" placeholder="Enter RERA ID Here" />
                 </Form.Item>
             </Col>
-            <Col xs={24} md={12}>
+            <Col xs={24} md={8}>
                 <Form.Item label="Approval Authority" name="appauthority">
                     <Input
                         name="appauthority"
@@ -160,7 +160,7 @@ const Overview = () => {
                     />
                 </Form.Item>
             </Col>
-            <Col xs={24} md={12}>
+            <Col xs={24} md={8}>
                 <Form.Item label="Locality" name="locality">
                     <Select
                         name="locality"
@@ -178,7 +178,7 @@ const Overview = () => {
                     />
                 </Form.Item>
             </Col>
-            <Col xs={24}>
+            <Col xs={24} md={8}>
                 <Form.Item label="Posted By" name="postedby">
                     <Select
                         name="postedby"

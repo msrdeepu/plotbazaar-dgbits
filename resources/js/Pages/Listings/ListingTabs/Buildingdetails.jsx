@@ -246,6 +246,7 @@ const Buildingdetails = () => {
             <Col xs={24}>
                 <Form.Item label="Suitable Tenant" name="tenant">
                     <TextArea
+                        rows={3}
                         name="tenant"
                         placeholder="Suitable Tenant Here.."
                     />

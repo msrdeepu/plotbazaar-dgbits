@@ -11,8 +11,11 @@ const onCancelData = () => {
 import Overview from "./ListingTabs/Overview";
 import Propertydetails from "./ListingTabs/Propertydetails";
 import Buildingdetails from "./ListingTabs/Buildingdetails";
-
+import Propertycontent from "./ListingTabs/Propertycontent";
+import Attachments from "./ListingTabs/Attachments";
 import Locationdetails from "./ListingTabs/Locationdetails";
+import Calltoaction from "./ListingTabs/Calltoaction";
+import Publish from "./ListingTabs/Publish";
 
 const onChange = (key) => {
     console.log(key);
@@ -36,12 +39,12 @@ const items = [
     {
         key: "4",
         label: "Property Content",
-        // children: <Location />,
+        children: <Propertycontent />,
     },
     {
         key: "5",
         label: "Attachments",
-        // children: <Bankdetails />,
+        children: <Attachments />,
     },
 
     {
@@ -52,12 +55,12 @@ const items = [
     {
         key: "7",
         label: "Call to Action",
-        // children: <Nominee />,
+        children: <Calltoaction />,
     },
     {
         key: "8",
         label: "Publish Settings",
-        // children: <Nominee />,
+        children: <Publish />,
     },
 ];
 
